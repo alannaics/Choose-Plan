@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: Choose-Plan
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ML_CLIENT_ID
+        sync: false
+      - key: ML_CLIENT_SECRET
+        sync: false
+      - key: ML_REDIRECT_URI
+        value: https://choose-plan.onrender.com/auth/mercadolivre/callback
+      - key: SESSION_SECRET
+        sync: false
+      - key: AI_API_URL
+        sync: false
+      - key: AI_API_KEY
+        sync: false
+      - key: SHOPEE_API_URL
+        sync: false
+      - key: SHOPEE_API_KEY
+        sync: false
